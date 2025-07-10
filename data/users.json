@@ -1,0 +1,19 @@
+[
+  {
+    "username": "admin1",
+    "password": "hashed_pw",
+    "role": "admin"
+  },
+  {
+    "username": "staff1",
+    "password": "hashed_pw",
+    "role": "staff",
+    "shop": "Shop A"
+  },
+  {
+    "username": "staff2",
+    "password": "hashed_pw",
+    "role": "staff",
+    "shop": "Shop B"
+  }
+]
