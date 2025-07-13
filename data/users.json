@@ -1,19 +1,27 @@
 [
   {
-    "username": "admin1",
-    "password": "hashed_pw",
-    "role": "admin"
+    "username": "shadow",
+    "password": "$2b$12$41tPIypWO6Z0EPFbrIe2Fe8t5KNd.kG5dkXHLYNc.JxLYPJSo/xwe",
+    "role": "admin",
+    "shops": [
+      "1,2,3"
+    ]
   },
   {
-    "username": "staff1",
-    "password": "hashed_pw",
+    "username": "shadow123",
+    "password": "$2b$12$qv2Bw6gGHI8211BHBhnzVeyjcjXb7DkRcCxlwQT6ufOZ7/C1U4zcC",
     "role": "staff",
-    "shop": "Shop A"
+    "shops": [
+      "1,2"
+    ]
   },
   {
-    "username": "staff2",
-    "password": "hashed_pw",
+    "username": "shdow123",
+    "password": "$2b$12$nWke0xFRbmy06vzwdFPSNusoKe.1cKed7CHzPGkNWXVAAz5BaVhBu",
     "role": "staff",
-    "shop": "Shop B"
+    "shops": [
+      "1",
+      "2"
+    ]
   }
 ]
