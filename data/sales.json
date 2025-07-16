@@ -31,5 +31,15 @@
     "total_amount": 10500.0,
     "sold_by": "charlie",
     "date": "2024-07-12"
+  },
+  {
+    "sale_id": 4,
+    "shop": "1",
+    "product_id": "4",
+    "product_name": "Asus VivoBook 14",
+    "quantity": 1,
+    "total_amount": 58000,
+    "sold_by": "shadow",
+    "date": "2025-07-16"
   }
 ]

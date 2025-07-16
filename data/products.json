@@ -1,104 +1,110 @@
 [
-{
+  {
     "id": 1,
     "name": "Dell Inspiron 15",
-    "price": 55000.0,
+    "price": 65000,
     "reorder_level": 5
   },
   {
     "id": 2,
     "name": "HP Pavilion x360",
-    "price": 65000.0,
-    "reorder_level": 4
+    "price": 72000,
+    "reorder_level": 5
   },
   {
     "id": 3,
     "name": "Lenovo ThinkPad E14",
-    "price": 72000.0,
-    "reorder_level": 3
+    "price": 68000,
+    "reorder_level": 5
   },
   {
     "id": 4,
     "name": "Asus VivoBook 14",
-    "price": 48000.0,
+    "price": 58000,
     "reorder_level": 5
   },
   {
     "id": 5,
     "name": "iPhone 14",
-    "price": 80000.0,
+    "price": 75000,
     "reorder_level": 10
   },
   {
     "id": 6,
     "name": "Samsung Galaxy S23",
-    "price": 70000.0,
+    "price": 70000,
     "reorder_level": 10
   },
   {
     "id": 7,
     "name": "OnePlus 12",
-    "price": 60000.0,
-    "reorder_level": 12
+    "price": 60000,
+    "reorder_level": 10
   },
   {
     "id": 8,
     "name": "Redmi Note 13",
-    "price": 20000.0,
+    "price": 25000,
     "reorder_level": 15
   },
   {
     "id": 9,
     "name": "Manchester United Home Jersey",
-    "price": 3500.0,
-    "reorder_level": 25
+    "price": 2500,
+    "reorder_level": 20
   },
   {
     "id": 10,
     "name": "Real Madrid Away Jersey",
-    "price": 3800.0,
+    "price": 2500,
     "reorder_level": 20
   },
   {
     "id": 11,
     "name": "Team India Cricket Jersey",
-    "price": 2500.0,
-    "reorder_level": 30
+    "price": 1800,
+    "reorder_level": 20
   },
   {
     "id": 12,
     "name": "Argentina Messi Jersey",
-    "price": 4000.0,
+    "price": 3000,
     "reorder_level": 20
-  }
-  ,{
+  },
+  {
     "id": 13,
     "name": "PS5 Console",
-    "price": 50000.0,
-    "reorder_level": 5
+    "price": 50000,
+    "reorder_level": 3
   },
   {
     "id": 14,
     "name": "Xbox Series X",
-    "price": 52000.0,
-    "reorder_level": 4
+    "price": 48000,
+    "reorder_level": 3
   },
   {
     "id": 15,
     "name": "Nintendo Switch",
-    "price": 30000.0,
-    "reorder_level": 6
+    "price": 30000,
+    "reorder_level": 5
   },
   {
     "id": 16,
     "name": "FIFA 25 Game Disc",
-    "price": 4500.0,
-    "reorder_level": 15
+    "price": 3500,
+    "reorder_level": 10
   },
   {
     "id": 17,
     "name": "GTA VI Game Disc",
-    "price": 5000.0,
+    "price": 5000,
     "reorder_level": 10
+  },
+  {
+    "id": 18,
+    "name": "17",
+    "price": 11.0,
+    "reorder_level": 1
   }
 ]
