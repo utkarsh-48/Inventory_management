@@ -1,133 +1,145 @@
 # Multi-Shop Inventory Management System
 
-A Python-based Inventory Management System for managing multiple shops or branches with:
-- A shared product catalog
-- Per-shop stock tracking
-- User authentication with roles (admin or staff)
-- Secure password storage
-- Global and per-shop reports
+A Python-based inventory management CLI tool for managing multiple shops or branches, with shared product data, per-shop stock tracking, role-based user access, and secure data storage. Designed for educational use and as a foundation for real-world extensions.
 
 ---
 
 ## Features
 
-**User Authentication**
-- Register and login with hashed passwords (bcrypt)
-- Role-based access: admin or staff
-- Single `users.json` for all users, with assigned shops
+### User Authentication
 
-**Multi-Shop Support**
-- Central product catalog (`products.json`)
-- Stock tracked per shop (`stock.json`)
-- Shop selection prompt only if user has more than one shop assigned
+* Register and log in securely with hashed passwords using `bcrypt`.
+* Role-based access control (admin or staff).
+* All user accounts stored in a single `users.json` file, with support for multiple shops per user.
 
-**Inventory Management**
-- Add, update, delete, and view products
-- Shared product list, stock adjusted per shop
-- Reorder levels and low stock alerts
+### Multi-Shop Support
 
-**Sales Tracking**
-- Record sales transactions per shop
-- Sales history saved in `sales.json`
+* Central product catalog (`products.json`).
+* Stock tracked separately for each shop (`stock.json`).
+* Shop selection is only required if a user has more than one shop assigned.
 
-**Reporting**
-- Generate per-shop or global inventory and sales reports
-- Optional export to CSV
+### Inventory Management
+
+* Add, update, delete, and view products.
+* Manage stock levels independently for each shop.
+* Reorder levels and low stock reports help ensure proper stock levels.
+
+### Sales Tracking
+
+* Record sales transactions per shop.
+* Automatically adjusts stock on each sale.
+* Sales history saved to `sales.json`.
+
+### Reporting
+
+* Generate per-shop or global sales and inventory reports.
+* Compare sales across shops.
+* Low stock and reorder alerts.
 
 ---
 
 ## Project Structure
 
 ```
-
-inventory\_management\_system/
+inventory_management_system/
 │
-├── main.py                # Entry point
+├── main.py                # Entry point for the CLI
 │
-├── core/                  # Core logic modules
-│   ├── **init**.py
-│   ├── user\_auth.py
+├── core/                  # Core modules
+│   ├── __init__.py
+│   ├── auth.py
 │   ├── product.py
 │   ├── inventory.py
-│   ├── shop.py
+│   ├── sales.py
 │   ├── reports.py
+│   ├── shops.py
 │
 ├── data/                  # Persistent data files
 │   ├── products.json
 │   ├── users.json
 │   ├── stock.json
 │   ├── sales.json
+│   ├── shops.json
 │
 ├── requirements.txt       # Python dependencies
 ├── README.md              # Project documentation
-
 ```
+
+---
 
 ## How It Works
 
-1. Run `main.py`
-2. Register or login as a user
-3. If the user is assigned to multiple shops, select a shop to work in
-4. Manage inventory: add, update, delete products, adjust stock for the selected shop
-5. Record product sales
-6. Generate per-shop or global reports
+1. Run `main.py`.
+2. Register or log in as a user.
+3. If assigned to multiple shops, select which shop to manage.
+4. Manage the inventory: add, update, delete products, adjust stock levels.
+5. Record product sales, which automatically adjust shop stock.
+6. Generate reports for a single shop or compare multiple shops.
 
 ---
 
 ## Setup Instructions
 
-1. Clone the repository:
-   ```bash
-   git clone <your-repo-url>
-   cd inventory_management_system
-``
+**Clone the repository**
 
-2. (Optional) Create a virtual environment:
+```bash
+git clone <your-repo-url>
+cd inventory_management_system
+```
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # macOS/Linux
-   venv\Scripts\activate     # Windows
-   ```
+**(Optional) Create a virtual environment**
 
-3. Install dependencies:
+```bash
+python -m venv venv
+# Activate (Windows)
+venv\Scripts\activate
+# Or activate (macOS/Linux)
+source venv/bin/activate
+```
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+**Install dependencies**
 
-4. Run the system:
+```bash
+pip install -r requirements.txt
+```
 
-   ```bash
-   python main.py
-   ```
+**Run the system**
+
+```bash
+python main.py
+```
 
 ---
 
 ## Dependencies
 
-* `bcrypt` for secure password hashing
-* `tabulate` for formatted CLI tables
-* `pwinput` for masked password input in the terminal
+* `bcrypt` for password hashing.
+* `pwinput` for masked password input in the terminal.
+* `tabulate` (optional) for formatted CLI tables.
 
 ---
 
 ## Planned Improvements
 
-* Improved password hashing and salting
-* Backup and restore for JSON data
-* Option to switch to SQLite or another database in the future
-* Optional web interface
-
----
-
-## Author
-
-Developed by Utkarsh for educational purposes and practice with Python, file handling, and simple CLI application design.
+* Better backup and restore options for JSON files.
+* Switch to a database backend (e.g., SQLite) for improved data integrity.
+* Web or GUI front-end for broader usability.
+* Improved logging and audit trails.
 
 ---
 
 ## License
 
-Free to use, modify, and extend. Add an appropriate open-source license if needed.
+This project is open for educational use. Feel free to adapt, modify, or extend it. Consider adding an appropriate open-source license for any public or production use.
 
+---
+
+## Author
+
+Developed by Utkarsh for hands-on practice with Python file handling, simple authentication, and modular CLI app design.
+
+---
+
+**For questions or contributions, open an issue or submit a pull request.**
+
+---
