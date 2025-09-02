@@ -139,7 +139,3 @@ This project is open for educational use. Feel free to adapt, modify, or extend 
 Developed by Utkarsh for hands-on practice with Python file handling, simple authentication, and modular CLI app design.
 
 ---
-
-**For questions or contributions, open an issue or submit a pull request.**
-
----
